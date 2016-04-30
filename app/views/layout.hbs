@@ -1,0 +1,20 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+		{{> meta }}
+		{{{block "meta"}}}
+		<title>{{ title }}</title>
+		{{> stylesheets }}
+		{{{block "stylesheets"}}}
+	</head>
+	<body>
+	{{> menu }}
+		{{{body}}}
+		
+		{{> scripts }}
+		{{{block "scripts"}}}
+	</body>
+
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "drawboard",
+  "version": "1.0.0",
+  "description": "Drawing board where people can draw and vote for their favorite drawings",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hereismass/Drawboard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hereismass/Drawboard/issues"
+  },
+  "homepage": "https://github.com/hereismass/Drawboard#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "gulp": "^3.9.1",
+    "hbs": "^4.0.0",
+    "orm": "^2.1.30",
+    "sqlite3": "^3.1.3"
+  }
+}
