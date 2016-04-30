@@ -1,1 +1,11 @@
-<h1>Show Drawing</h1>
+<h1>{{drawing.name}}</h1>
+
+<canvas id="show_drawing">
+</canvas>
+
+{{#extend "scripts"}}
+	<script type="text/javascript">
+	var drawingBody = '{{{drawing.body}}}';
+	</script>
+	<script type="text/javascript" src="/js/show_draw.js"></script>
+{{/extend}}

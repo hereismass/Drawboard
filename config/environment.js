@@ -20,27 +20,6 @@ module.exports = function(app){
 	require('./helpers')(hbs);
 	hbs.localsAsTemplateData(app);
 
-	//db init
-	models(function (err, db) {
-	  if (err) throw err;
-
-	  db.drop(function (err) {
-	    if (err) throw err;
-
-	    db.sync(function (err) {
-	      if (err) throw err;
-
-	      db.models.drawing.create({
-	        name: "White Ocean", body: "[]"
-	      }, function (err, message) {
-	        if (err) throw err;
-
-	        db.close()
-	        console.log("Done!");
-	      });
-	    });
-	  });
-	});
 
 	//middleware for models
     app.use(function (req, res, next) {
